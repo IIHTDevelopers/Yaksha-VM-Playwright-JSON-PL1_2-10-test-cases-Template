@@ -85,8 +85,9 @@ test.describe("Yaksha", () => {
     await verifyImageisUploaded(page);
   });
 
-  test('TS-9 Verify TDS Percent update for an employee', async ({ page }) => {
+  test.only('TS-9 Verify TDS Percent update for an employee', async ({ page }) => {
     await incentivePage.editTDSForEmployee();
+    await verifyTdsTest(page);
   });
 
   test("TS-10 Verify the tooltip text on hover of Star icon in Laboratory", async ({ page }) => {
@@ -100,6 +101,11 @@ test.describe("Yaksha", () => {
 /**
  * ------------------------------------------------------Helper Methods----------------------------------------------------
  */
+
+async function verifyTdsTest(page: Page) {
+  const ptName = await page.$$(`div[col-id="FullName"]`);
+  expect(await ptName[1].textContent()).toContain("Rakesh");
+}
 
 async function verifyUserIsLoggedin(page: Page) {
   // Verify successful login by checking if 'admin' element is visible
