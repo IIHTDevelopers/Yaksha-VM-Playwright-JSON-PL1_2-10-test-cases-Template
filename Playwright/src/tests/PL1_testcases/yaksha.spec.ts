@@ -85,7 +85,7 @@ test.describe("Yaksha", () => {
     await verifyImageisUploaded(page);
   });
 
-  test.only('TS-9 Verify TDS Percent update for an employee', async ({ page }) => {
+  test('TS-9 Verify TDS Percent update for an employee', async ({ page }) => {
     await incentivePage.editTDSForEmployee();
     await verifyTdsTest(page);
   });
