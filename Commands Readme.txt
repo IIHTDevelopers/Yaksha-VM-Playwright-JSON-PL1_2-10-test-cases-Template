@@ -23,6 +23,30 @@ npx playwright test ./src/tests/PL1_testcases/yaksha.spec.ts
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import { expect, Locator, Page } from "@playwright/test";
 import { CommonMethods } from "../tests/commonMethods";
 import testData from "../Data/ValidLogin.json";
