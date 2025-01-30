@@ -5,18 +5,14 @@ export class LoginPage {
   private usernameInput: Locator;
   private passwordInput: Locator;
   private loginButton: Locator;
-  private loginErrorMessage: Locator;
   private admin: Locator;
-  private logOut: Locator;
 
   constructor(page: Page) {
     this.page = page;
     this.usernameInput = page.locator(``);
     this.passwordInput = page.locator(``);
     this.loginButton = page.locator(``);
-    this.loginErrorMessage = page.locator(``);
     this.admin = page.locator('');
-    this.logOut = page.locator("");
   }
 
   /**
