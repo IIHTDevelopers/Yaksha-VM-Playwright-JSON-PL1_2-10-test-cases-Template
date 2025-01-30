@@ -4,23 +4,13 @@ export default class LaboratoryPage {
   private page: Page;
   private laboratoryLink: Locator;
   private laboratoryDashboard: Locator;
-  private settingsSubModule: Locator;
-  private addNewLabTest: Locator;
-  private addButton: Locator;
-  private closeButton: Locator;
   private starIcon: Locator;
-  private errorMessageLocator: Locator;
 
   constructor(page: Page) {
     this.page = page;
     this.laboratoryLink = page.locator('');
     this.laboratoryDashboard = page.locator('');
-    this.settingsSubModule = page.locator('');
-    this.addNewLabTest = page.locator('');
-    this.addButton = page.locator('');
-    this.closeButton = page.locator('');
     this.starIcon = page.locator('');
-    this.errorMessageLocator = page.locator(``);
   }
 
   /**
