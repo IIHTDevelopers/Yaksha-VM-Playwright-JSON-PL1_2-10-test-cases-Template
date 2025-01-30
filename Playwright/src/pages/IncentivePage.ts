@@ -7,7 +7,6 @@ export default class IncentivePage {
         settingsTab: Locator;
         searchBar: Locator;
         editTDSButton: Locator;
-        editTDSModal: Locator;
         tdsInputField: Locator;
         updateTDSButton: Locator;
         tdsValueInTable: Locator;
@@ -20,7 +19,6 @@ export default class IncentivePage {
             settingsTab: page.locator(''),
             searchBar: page.locator(``),
             editTDSButton: page.locator(``),
-            editTDSModal: page.locator(''),
             tdsInputField: page.locator(''),
             updateTDSButton: page.locator(''),
             tdsValueInTable: page.locator(``),
